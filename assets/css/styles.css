@@ -1,0 +1,124 @@
+:root {
+    --color-primario: #0a3871;
+    --color-secundario: #f3f5fc;
+    --color-terciario: #d8dfe8;
+    --inter-font: "Inter", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--color-secundario);
+    font-family: var(--inter-font);
+}
+
+header {
+    margin-bottom: 5rem;
+    width: 60%;    
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+}
+
+header img {
+    width: 120px;
+    height: 48px;
+}
+
+.form_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70dvh;
+}
+
+.form_input {
+    width: 100%;
+    max-width: 577px;
+    height: 64dvh;
+    border-color: transparent;
+    background: transparent;
+    outline: none;
+    color: var(--color-primario);
+    font-family: var(--inter-font);
+    font-size: 3.2rem;
+    margin-bottom: 3rem;
+    overflow: auto;
+}
+
+::placeholder {
+    color: var(--color-primario);
+}
+
+.alert_msj {
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.submit_container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.form_btn {
+    background: var(--color-primario);
+    color: white;
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    border: 1px solid var(--color-primario);
+    font-weight: 600;   
+}
+
+.form_btn--secundary {
+    background: var(--color-terciario);
+    color: var(--color-primario);
+}
+
+.result {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+    height: 92dvh;
+    border-radius: 32px;
+    width: 100%;
+    max-width: 40rem;
+}
+
+.result_img {
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+    .submit_container {
+        justify-content: center;
+    }
+    .result {
+        height: auto;
+        max-width: 624px;
+        margin-top: 2rem;
+        min-height: 186px;
+    }
+    .result_img {
+        display: none;
+    }
+    header img {
+        width: 50px;
+    }
+}
