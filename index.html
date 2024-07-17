@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
     <!-- Favicons -->
     <link
       rel="icon"
@@ -16,30 +19,51 @@
       href="./assets/icons/favicon-32x32.png"
     />
     <title>Encriptador de Texto</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <img src="./assets/img/alura_logo.svg" alt="Logo-Alura">
+      <img src="./assets/img/alura_logo.svg" alt="Logo-Alura" />
     </header>
     <main>
-        <form class="form_section">
-            <textarea class="form_input" name="mensaje" id="" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
-            <div class="btn_container">
-                <div class="alert_msj"><img src="./assets/img/alert_icon.svg" alt="alert icon"><span>Solo letras minúsculas y sin acentos</span></div>
-            </div>
-            <div class="submit_container">
-                <input class="form_btn" type="submit" value="Encriptar">
-                <input class="form_btn form_btn--secundary" type="submit" value="Desencriptar">
-            </div>
-        </form>
-        <aside class="result">
-            <img src="./assets/img/monito.png" alt="imagen de monito" class="result_img">
-            <div class="result_container">
-                <h3 class="result_title">Ningún mensaje fue encontrado</h3>
-                <p class="result_text">Ingresa el texto que desees encriptar o desencriptar.</p>
-            </div>
-        </aside>
+      <form class="form_section">
+        <textarea
+          class="form_input"
+          name="mensaje"
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Ingrese el texto aqui"
+        ></textarea>
+        <div class="btn_container">
+          <div class="alert_msj">
+            <img src="./assets/img/alert_icon.svg" alt="alert icon" /><span
+              >Solo letras minúsculas y sin acentos</span
+            >
+          </div>
+        </div>
+        <div class="submit_container">
+          <input class="form_btn" type="submit" value="Encriptar" />
+          <input
+            class="form_btn form_btn--secundary"
+            type="submit"
+            value="Desencriptar"
+          />
+        </div>
+      </form>
+      <aside class="result">
+        <img
+          src="./assets/img/monito.png"
+          alt="imagen de monito"
+          class="result_img"
+        />
+        <div class="result_container">
+          <h3 class="result_title">Ningún mensaje fue encontrado</h3>
+          <p class="result_text">
+            Ingresa el texto que desees encriptar o desencriptar.
+          </p>
+          <button class="form_btn form_btn--secundary hidden">Copiar</button>
+        </div>
+      </aside>
     </main>
-    
-</body>
+  </body>
 </html>

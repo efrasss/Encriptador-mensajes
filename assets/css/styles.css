@@ -81,7 +81,7 @@ header img {
 }
 
 .form_btn--secundary {
-    background: var(--color-terciario);
+    background: transparent;
     color: var(--color-primario);
 }
 
@@ -100,6 +100,9 @@ header img {
 
 .result_img {
     display: block;
+}
+.hidden {
+    display: none;
 }
 
 @media screen and (max-width: 768px) {
